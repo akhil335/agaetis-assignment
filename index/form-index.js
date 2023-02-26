@@ -25,6 +25,6 @@ submitBlog.addEventListener('submit', (e)=> {
     })
 
     localStorage.setItem('blogPosts', JSON.stringify(blogData));
-    window.location.href = "index.html";
+    window.location.href = "blogger.html";
     submitBlog.reset();
 })

@@ -51,6 +51,9 @@
 }
 
 @media screen and (max-width: 400px) {
+    .sign-up img{
+        display: none;
+    }
     .post-slider .popular-post-title {
         font-size: 3rem;
         width: 100%;

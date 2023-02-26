@@ -169,7 +169,7 @@ body {
 }
 
 .post-slider {
-    width: clamp(300px, 80%, 700px);
+    width: clamp(300px, 100%, 700px);
     color: white;
 }
 .post-slider .popular-post-title {
