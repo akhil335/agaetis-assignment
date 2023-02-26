@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create a Blog</title>
+    <link rel="stylesheet" href="../css/form-style.css"></link> 
+</head>
+<body>
+    <form class="blog-form">
+        <h1>Create a Blog</h1>
+
+        <div class="blog-details-container">
+            <label for="blog-author">
+                <p>Your Name</p>
+                <input id="blog-author" type="text" placeholder="Enter your name here" name="blog-author" minlength='3'  required />
+            </label>
+    
+            <label for="blog-title">
+                <p>Blog Title</p>
+                <input id="blog-title" type="text" placeholder="Enter your title here" name="blog-title" minlength='5' maxlength='40' required />
+            </label>
+    
+            <label for="blog-summery" class="blog-summery">
+                <p>Summery</p>
+                <textarea id="blog-summery" type="text" placeholder="Enter your summery here" name="blog-summery" minlength='15' required></textarea>
+            </label>
+    
+            <label for="blog-content" class="blog-content">
+                <p>Content</p>
+                <textarea id="blog-content" type="text" placeholder="Enter your content here" name="blog-content" minlength='20' required></textarea>
+            </label>
+        </div>
+        <button class="submit-blog">Upload Blog</button>
+    </form>
+    <script src="../index/form-index.js" ></script>
+</body>
+</html>

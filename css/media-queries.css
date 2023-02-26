@@ -1,0 +1,103 @@
+@media screen and (max-width: 1240px) {
+
+    .grid-container {
+        max-width: 1240px;
+        height: 100vh;
+        display: grid;
+        grid-template-areas: 'header header header'
+                             'section section section'
+                             'article article article'
+                             'aside aside aside'
+                             'footer footer footer';
+        margin: auto;
+    }
+    
+    .blog-title {
+        padding: 1rem 2%;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        background: white;
+        right: 0;
+        width: 60%;
+        padding-top: 2.7rem;
+        text-align: center;
+    }
+
+    .nav-links li {
+        border-bottom: 1px solid #0000001a;
+    }
+
+    .hamburger {
+        display: flex;
+        justify-content: end;
+        margin-right: 1rem;
+    }
+
+    .recents-post-container {
+        margin: 3rem 1rem;
+    }
+
+    .grid-container article {
+        grid-area: article;
+        margin: 2rem;
+    }
+
+    aside {
+            padding: 0 1rem;
+        }
+}
+
+@media screen and (max-width: 400px) {
+    .post-slider .popular-post-title {
+        font-size: 3rem;
+        width: 100%;
+    }
+    .post-slider {
+        width: 100%;
+        color: white;
+    }
+    .popular-post {
+        padding: 2rem 3%;
+    }
+    .popular-post-content-info {
+        width: 100%;
+    }
+    .recent-post-card .post-cards {
+        width: 100%;
+        flex-direction: column-reverse;
+    }
+    .post-info {
+        padding: 2rem;
+        width: 100%;
+    }
+    .post-image {
+        width: 100%;
+        height: 200px;
+    } 
+    .grid-container article {
+        margin: 1rem;
+    }
+    .current-blog-info {
+        padding: 1rem 0 1rem;
+        margin: 1rem 0px;
+    }
+    .current-blog-title-date h1 {
+        font-size: 2.2rem;
+    }
+    .blog-heading h2, .blog-sub-heading h2, .blog-sub-heading-2 h2 {
+        font-size: 2.2rem;
+    }
+    .current-blog {
+        margin-bottom: 3rem;
+    }
+    .another-blog-post-title-date h1, .new-feature-container h1 {
+        font-size: 2.2rem;
+    }
+    .archives-section, .elsewhere-section, .new-feature-container {
+        padding-left: 0rem;
+        margin-top: 1rem;
+    }
+}

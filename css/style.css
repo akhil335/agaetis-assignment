@@ -1,0 +1,422 @@
+@font-face {
+    font-family: 'poppins';
+    src: url('../fonts/Poppins-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'poppins-medium';
+    src: url('../fonts/Poppins-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'spectral';
+    src: url('../fonts/Spectral-Italic.ttf') format('truetype');
+}
+
+*, ::before, ::after {
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins';
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: 'poppins', sans-serif;
+}
+
+.grid-container {
+    max-width: 1240px;
+    height: 100vh;
+    display: grid;
+    grid-template-areas: 'header header header'
+                         'section section section'
+                         'article article aside'
+                         'footer footer footer';
+    margin: auto;
+}
+
+.grid-container header {
+    grid-area: header;
+}
+
+.grid-container section {
+    grid-area: section;
+}
+
+.grid-container article {
+    grid-area: article;
+    margin-right: 2rem;
+}
+
+.grid-container aside {
+    grid-area: aside;
+}
+
+.grid-container footer {
+    grid-area: footer;
+}
+
+.blog-title {
+    justify-content: space-between;
+    padding: 1rem 0;
+    border-bottom: 3px solid #0000000f;
+    flex-wrap: wrap;
+}
+
+.blog-title p {
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.blog-title h1 {
+    font-family: serif;
+    font-size: 3rem;
+    margin: auto;
+}
+
+.sign-up {
+    gap: 1rem;
+}
+
+.search-box {
+    justify-content: end;
+}
+
+.search-box input {
+    outline: none;
+    border: none;
+    width: 0;
+    transition: width 0.3s linear;
+}
+
+.search-box:hover {
+    gap: 0.5rem;
+    border-bottom: 1px solid #0000001c;
+}
+
+.search-box:hover input {
+    width: 100%;
+}
+
+.sign-up img {
+    width: 25px;
+    height: 25px;
+}
+
+.sign-up button {
+    font-size: 1rem;
+    padding: 0.3rem 0.5rem;
+    font-weight: 700;
+    border-radius: 5px;
+    border: 3px solid #00000057;
+    border-bottom: 1px solid #0000009e;
+    outline: none;
+    background: white;
+}
+
+.nav {
+    position: relative;
+}
+
+.nav-links {
+    flex-wrap: wrap;
+}
+
+.nav-links li {
+    padding: 1rem 1.527rem;
+}
+
+.hamburger {
+    display: none;
+    justify-content: end;
+    margin-right: 1rem;
+    position: relative;
+}
+
+.hamburger-switch {
+    overflow: hidden;
+    width: 50px;
+    height: 50px;
+}
+
+.hamburger-translate {
+    display: flex;
+    align-items: center;
+}
+
+.hamburger-translate .hamburger-open {
+    width: 50px;
+    height: 50px;
+}
+
+.hamburger-translate .hamburger-close {
+    width: 40px;
+    height: 40px;
+}
+
+.hamburger-translate-open {
+    transform: translate(-100%);
+}
+
+.popular-post {
+    padding: 3rem 5%;
+    background-color: #343a40;
+}
+
+.post-slider {
+    width: clamp(300px, 80%, 700px);
+    color: white;
+}
+.post-slider .popular-post-title {
+    font-family: 'spectral', sans-serif;
+    font-size: 4rem;
+    font-weight: 900;
+    line-height: 1.1;
+    width: 90%;
+}
+
+.popular-post-content-info {
+    width: 75%;
+    font-size: 1.2rem; 
+    margin: 2rem 0;
+}
+
+.post-slider span {
+    font-size: 1.2rem;
+    font-weight: 900;
+}
+
+.recents-post-container {
+    margin: 3rem 0.3rem;
+}
+
+.recent-post-card {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.recent-post-card .post-cards{
+    flex: 599px 1 1;
+    border: 1px solid #0000001f;
+    border-radius: 5px;
+    box-shadow: -1px 3.5px 4px 1px #00000017;
+}
+
+.recent-post-card :where(p, span) {
+    font-family: 'poppins-medium';
+}
+.post-info {
+    padding: 2rem;
+    width: 70%;
+}
+
+.post-info span {
+    font-weight: 700;
+    color: #0288d1;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.card2 .post-info > span {
+    color: green;
+}
+
+.post-title-info {
+    line-height: 1;
+}
+
+.post-title-info h2 {
+    font-size: 2rem;
+}
+
+.post-title-info .post-date {
+    display: block;
+    opacity: 0.7;
+    margin: 0.2rem 0 0.7rem;
+    color: black;
+}
+
+.post-prev-content {
+    margin-bottom: 1rem;
+    line-height: 1.4;
+}
+
+.post-image {
+    background-color: #55595c;
+    align-items: center;
+    color: white;
+    width: calc(100% / 3);
+    justify-content: center;
+}
+
+article > h1 {
+    font-family: 'spectral';
+}
+
+.current-blog {
+    margin-bottom: 4rem;
+}
+
+.current-blog-title-date h1 {
+    font-size: 2.5rem;
+}
+
+.current-blog-date {
+    display: block;
+    opacity: 0.7;
+    margin: 0.1rem 0 0.7rem;
+    color: black;
+}
+
+.author-name {
+    font-weight: 700;
+    color: #0288d1;
+}
+
+.blog-container :where(p, li, span) {
+    font-family: 'poppins-medium';
+}
+
+.current-blog-info {
+    border-top: 1px solid #00000047;
+    border-bottom: 1px solid #00000047;
+    padding: 2rem 0 1rem;
+    margin: 2rem 0px;
+}
+
+.link-content {
+    color: #0086cf;
+    font-weight: 700;
+}
+
+.blog-heading,
+.blog-sub-heading,
+.blog-sub-heading-2 {
+    margin: 1rem 0;
+}
+
+.blog-heading h2,
+.blog-sub-heading h2,
+.blog-sub-heading-2 h2 {
+    font-size: 2.5rem;
+    margin-bottom: 0.3rem;
+}
+
+.ul-1,
+.ul-2 {
+    padding: 0 2rem;
+}
+
+.ul-1 li {
+    position: relative;
+}
+
+.ul-1 li::before {
+    position: absolute;
+    content: '.';
+    left: -18px;
+    font-size: 3rem;
+    top: -40px;
+}
+
+.ul-2 li {
+    list-style: devanagari;
+}
+
+.another-blog-post-title-date h1,
+.new-feature-container h1 {
+    font-size: 2.5rem;
+}
+
+.another-blog-post-date,
+.new-feature-blog-post-date {
+    display: block;
+    opacity: 0.7;
+    margin: 0.1rem 0 0.7rem;
+    color: black;
+}
+
+.about{
+   background-color: #f8f9fa;
+   padding: 2rem 1rem;
+}
+
+.about h2 {
+    font-family: 'spectral';
+    font-size: 2rem;
+}
+
+.about-me {
+    font-family: 'poppins-medium';
+}
+
+.archives-section,
+.elsewhere-section,
+.new-feature-container  {
+   padding-left: 1rem;
+   margin-top: 3rem;
+}
+
+.archives-section h2,
+.elsewhere-section h2{
+    font-family: 'spectral';
+    font-size: 2rem;
+}
+
+.archives-section a,
+.elsewhere-section a {
+    color: #0086cf;
+}
+
+.archives-section li,
+.elsewhere-section li{
+    padding: 0.1rem 0;
+}
+
+.another-post-container {
+   margin-bottom: 4rem;
+}
+
+.mew-feature-container {
+    margin-bottom: 6rem;
+}
+
+.blog-change-btn {
+    margin: 2rem 0 4rem;
+}
+
+.blog-change-btn button {
+    border-radius: 50px;
+    font-size: 1rem;
+    padding: 0.5rem 1.1rem;
+    font-weight: 700;
+    opacity: 0.7;
+    border: 1px solid #00000047;
+}
+
+.blog-change-btn .btn-active {
+    border: 1px solid #0086cf;
+    color: #0086cf;
+    background: white;
+    opacity: 1;
+}
+
+footer {
+    text-align: center;
+    color: #626262;
+    line-height: 3;
+    background-color: #e7e7e7;
+    margin-top: 1rem;
+}
+
+.scrolled-to {
+    border: none;
+    background-color: transparent;
+    font-size: 1rem;
+}
